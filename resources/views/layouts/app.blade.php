@@ -22,8 +22,9 @@
         <x-jet-banner />
         @livewire('navigation-menu')
 
+        @yield('content')
         <!-- Page Heading -->
-        <header class="d-flex py-3 bg-white shadow-sm border-bottom">
+        {{-- <header class="d-flex py-3 bg-white shadow-sm border-bottom">
             <div class="container">
                 {{ $header }}
             </div>
@@ -32,7 +33,7 @@
         <!-- Page Content -->
         <main class="container my-5">
             {{ $slot }}
-        </main>
+        </main> --}}
 
         @stack('modals')
 

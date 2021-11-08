@@ -3,7 +3,10 @@
 
 
 @section('content')
+    
+
     <div class="container">
-        <button class="btn btn-primary">Boton</button>
+        @livewire('show-posts')
+
     </div>
 @endsection
